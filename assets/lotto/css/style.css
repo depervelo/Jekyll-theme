@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+.lotto-wrap {
+  min-width: 320px;
+  max-width: 450px;
+  padding: 10px;
+  max-width: 450px;
+}
+
+.lotto-header {
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.lotto-logo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.lotto-title {
+  margin-bottom: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d82d32;
+}
+
+.lotto-body {
+  position: relative;
+  width: 100%;
+}
+
+.lotto-content {
+  position: relative;
+  margin: 0 auto;
+  width: 225px;
+  overflow: hidden;
+}
+
+.lotto-numbers-img {
+  display: block;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.lotto-block {
+  position: absolute;
+  display: none;
+  top: 61px;
+  left: 6px;
+  width: 95%;
+  height: 408px;
+  background: #fff;
+  left: 6px;
+  width: 95%;
+  height: 408px;
+}
+
+.lotto-content.checked .lotto-block {
+  display: block;
+  opacity: 0.5;
+}
+
+.lotto-numbers {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 60px;
+  left: 4.5px;
+}
+
+.lotto-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1px;
+  width: 31px;
+  height: 57px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.lotto-number[data-check] .fas {
+  display: none;
+  background: #fff;
+}
+
+.lotto-number[data-check="Y"] .fa-square,
+.lotto-number[data-check="T"] .fa-check,
+.lotto-number[data-check="F"] .fa-times {
+  display: block;
+}
+
+.lotto-groups {
+  position: absolute;
+  top: 466px;
+  left: 0;
+}
+
+.autoBtn {
+  position: absolute;
+  left: 90px;
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  border: 3px dotted #d82d32;
+  border-radius: 8px;
+}
+
+.resetBtn {
+  position: absolute;
+  top: 58px;
+  left: 90px;
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.lotto-result {
+  display: none;
+}
+
+.lotto-result.checked {
+  display: block;
+}
+
+.lotto-ball-groups {
+  display: flex;
+  margin-top: 26px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #fafafa;
+}
+
+.lotto-ball {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0px 0px 3px rgb(73 57 0/ 80%);
+}
+
+.lotto-ball + .lotto-ball {
+  margin-left: 20px;
+}
+
+.text-yellow {
+  background: #fbc400;
+}
+
+.text-blue {
+  background: #69c8f2;
+}
+
+.text-red {
+  background: #ff7272;
+}
+
+.text-gray {
+  background: #aaa;
+}
+
+.text-green {
+  background: #b0d840;
+}
